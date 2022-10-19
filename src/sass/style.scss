@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -10,13 +21,14 @@
 	max-width: 1200px;
 }
 
-html {
-	font-size: 62.5%;
-	font-family: sans-serif;
+.section-title {
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 4.3rem;
 }
 
-body {
-    overflow-x: hidden;
+.section {
+    margin: 5em 0;
 }
 
 // NAV
@@ -62,7 +74,8 @@ body {
         align-items: center;
         font-size: 3rem;
         transform: translateX(100%);
-        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+        background-blend-mode: multiply,multiply;
         transition: .3s ease-in-out;
 
         &.active {
@@ -110,7 +123,9 @@ body {
             display: block;
             position: relative;
             font-size: 2.2rem;
+            height: 100%;
             transform: translateX(0);
+            background: none;
 
             ul {
                 display: flex;
@@ -174,6 +189,10 @@ body {
         border: 1px solid #fff;
         color: #fff;
         font-size: 2.4rem;
+
+        &.active {
+            display: none;
+        }
     
         i {
             animation: arrowBtnAnimation 1s infinite alternate-reverse ease-in-out;
@@ -209,4 +228,76 @@ body {
             font-size: 5rem;
         }
     }
+}
+
+// MAIN
+.main {
+    // SECTION INFORMATION
+    .info {
+        &__text {
+            padding: 0 0.5em;
+            text-align: center;
+            line-height: 3rem;
+            font-size: 2rem;
+        }
+
+        &__img {
+            display: block;
+            margin: 2em auto;
+            width: 90%;
+            border-radius: 3rem;
+        }
+
+        &__subtitle {
+            margin-top: 3em;
+            margin-bottom: 0.3em;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        &__list {
+            list-style-type: none;
+            margin: 2em 0;
+            text-align: center;
+            font-size: 2.3rem;
+            font-weight: bold;
+
+            li {
+                margin: 0.5em 0;
+            }
+        }
+    }
+
+    @media(min-width: 1200px) {
+        .info {
+            &__area {
+                display: flex;
+            }
+
+            &__img {
+                width: 50%;
+            }
+
+            &__text {
+                &--one {
+                    padding: 0 1em;
+                    margin-top: 3em;
+                }
+            }
+        }
+    }
+
+    // SECTION PLANETS
+    
+
+
+
+
+
+
+
+
+
+
+
 }

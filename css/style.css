@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -11,13 +21,14 @@
   max-width: 1200px;
 }
 
-html {
-  font-size: 62.5%;
-  font-family: sans-serif;
+.section-title {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 4.3rem;
 }
 
-body {
-  overflow-x: hidden;
+.section {
+  margin: 5em 0;
 }
 
 .nav {
@@ -82,8 +93,9 @@ body {
   font-size: 3rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background-blend-mode: multiply,multiply;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
@@ -132,8 +144,10 @@ body {
     display: block;
     position: relative;
     font-size: 2.2rem;
+    height: 100%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    background: none;
   }
   .nav__menu ul {
     display: -webkit-box;
@@ -205,6 +219,10 @@ body {
   font-size: 2.4rem;
 }
 
+.header__arrow-btn.active {
+  display: none;
+}
+
 .header__arrow-btn i {
   animation: arrowBtnAnimation 1s infinite alternate-reverse ease-in-out;
 }
@@ -245,6 +263,54 @@ body {
   .header__card {
     padding: 3em 4em;
     font-size: 5rem;
+  }
+}
+
+.main .info__text {
+  padding: 0 0.5em;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.main .info__img {
+  display: block;
+  margin: 2em auto;
+  width: 90%;
+  border-radius: 3rem;
+}
+
+.main .info__subtitle {
+  margin-top: 3em;
+  margin-bottom: 0.3em;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main .info__list {
+  list-style-type: none;
+  margin: 2em 0;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.main .info__list li {
+  margin: 0.5em 0;
+}
+
+@media (min-width: 1200px) {
+  .main .info__area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .info__img {
+    width: 50%;
+  }
+  .main .info__text--one {
+    padding: 0 1em;
+    margin-top: 3em;
   }
 }
 /*# sourceMappingURL=style.css.map */
