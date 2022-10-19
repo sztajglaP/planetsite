@@ -1,9 +1,212 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }
 
 html {
-    font-family: sans-serif;
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+// NAV
+.nav {
+    position: fixed;
+    width: 100%;
+    color: #fff;
+
+    &.active {
+        background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+        margin-left: 0.5em;
+        font-size: 2rem;
+        text-transform: uppercase;
+        z-index: 10;
+
+		i {
+            margin-right: 0.1em;
+			font-size: 3.7rem;
+		}
+	}
+
+    &__menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        transform: translateX(100%);
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        transition: .3s ease-in-out;
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    &__menu-item {
+        margin: 0.1em 0;
+        padding: 0.5em 1em;
+        text-align: center;
+    }
+
+    &__burger-btn {
+        padding: 1em;
+        border: 1px solid transparent;
+        background: none;
+        z-index: 10;
+
+        span {
+            display: block;
+            margin: 0.6rem;
+            width: 3.3rem;
+            height: 0.4rem;
+            border-radius: 1.2rem;
+            background-color: #fff;
+        }
+    }
+}
+
+@media(min-width: 678px) {
+    .nav {
+        padding: 2em 0;
+
+        &__menu {
+            display: block;
+            position: relative;
+            font-size: 2.2rem;
+            transform: translateX(0);
+
+            ul {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+        }
+
+        &__menu-item {
+            padding: 0.3em 1em;
+            margin: 0 0.3em;
+            border-radius: 5rem;
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            &:hover a {
+                color: black;
+            }
+        }
+
+        &__burger-btn {
+            display: none;
+        }
+    }
+}
+
+// HEADER
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('../src/img/header-img-small.jpg');
+    background-position: center;
+    background-size: cover;
+
+    &__card {
+        padding: 4em 1em;
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 2rem;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    &__card-title {
+        margin-bottom: 0.2em;
+        text-transform: uppercase;
+    }
+
+    &__arrow-btn {
+        position: absolute;
+        bottom: 3rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 2.4rem;
+    
+        i {
+            animation: arrowBtnAnimation 1s infinite alternate-reverse ease-in-out;
+        }
+    }
+
+    @keyframes arrowBtnAnimation {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(30%);
+        }
+    }
+}
+
+@media(min-width: 678px) {
+    .header {
+        background-image: url('../src/img/header-img-big.jpg');
+
+        &__card {
+            padding: 3em 1em;
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .header {
+        &__card {
+            padding: 3em 4em;
+            font-size: 5rem;
+        }
+    }
 }
