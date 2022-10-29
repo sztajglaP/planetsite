@@ -11,10 +11,6 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -35,6 +31,7 @@ body {
   position: fixed;
   width: 100%;
   color: #fff;
+  z-index: 100;
 }
 
 .nav.active {
@@ -312,5 +309,78 @@ body {
     padding: 0 1em;
     margin-top: 3em;
   }
+}
+
+.main .planets__box {
+  position: relative;
+}
+
+.main .planets__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 2em;
+  padding: 0 2em;
+}
+
+.main .planets__card-image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main .planets__card-image img {
+  width: 100%;
+}
+
+.main .planets__card-info {
+  margin: 0 auto;
+  font-size: 4rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.main .planets .slick-arrow {
+  position: absolute;
+  height: 100%;
+  width: 4rem;
+  z-index: 10;
+  font-size: 3rem;
+  border: 1px solid transparent;
+  background: none;
+  cursor: pointer;
+}
+
+.main .planets .slick-prev {
+  left: 0;
+}
+
+.main .planets .slick-next {
+  top: 0;
+  right: 0;
+}
+
+.main .planets__link {
+  display: block;
+  margin: 5em auto 0 auto;
+  width: 80%;
+  cursor: pointer;
+}
+
+.main .planets__link a {
+  display: block;
+  padding: 1em 0;
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
