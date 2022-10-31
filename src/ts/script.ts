@@ -6,6 +6,7 @@ const headerArrowBtn: HTMLButtonElement = document.querySelector('.header__arrow
 const showNavMenu = () => {
     navMenu.classList.toggle('active');
     headerArrowBtn.classList.toggle('active');
+    document.body.classList.toggle('active');
 }
 
 const addShadowOnNav = () => {
@@ -16,5 +17,13 @@ const addShadowOnNav = () => {
     }
 }
 
+const skipToMainContent = () => {
+    const section: HTMLElement = document.querySelector('.info')
+    const position: number = section.getBoundingClientRect().top + window.pageYOffset - 120;
+
+    window.scrollTo({top: position, behavior: 'smooth'});
+}
+
 navButton.addEventListener('click', showNavMenu);
 document.addEventListener('scroll', addShadowOnNav);
+headerArrowBtn.addEventListener('click', skipToMainContent);

@@ -27,16 +27,16 @@
                 <div class="nav__menu">
                     <ul>
                         <li class="nav__menu-item">
-                            <a href="#">Strona glowna</a>
+                            <a href="index.html">Strona główna</a>
                         </li>
                         <li class="nav__menu-item">
-                            <a href="#">Planety</a>
+                            <a href="planets.html">Planety</a>
                         </li>
                         <li class="nav__menu-item">
-                            <a href="#">Filmy</a>
+                            <a href="films.html">Filmy</a>
                         </li>
                         <li class="nav__menu-item">
-                            <a href="#">Obrazy</a>
+                            <a href="images.html">Galeria</a>
                         </li>
                     </ul>
                 </div>
@@ -67,9 +67,10 @@
         <!-- SECTION INFO -->
         <section class="info">
             <div class="wrapper">
-                <div class="info__box section">
 
-                    <h2 class="section-title">Kosmos</h2>
+                <h2 class="section-title">Kosmos</h2>
+
+                <div class="info__box section">
 
                     <div class="info__area">
                         <p class="info__text info__text--one">
@@ -111,7 +112,7 @@
 
                 <h2 class="section-title">Planety</h2>
 
-                <div class="planets__box">
+                <div class="planets__box section">
 
                     <div class="planets__card">
                         <div class="planets__card-image">
@@ -184,14 +185,116 @@
 
                 </div>
 
-                <button class="planets__link">
+                <button class="link-button">
                     <a href="#">Dowiedz się więcej</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECTION FILMS -->
+        <section class="films">
+            <div class="wrapper">
+                <h2 class="section-title">Filmy</h2>
+                <div class="films__box section">
+
+                    <div class="films__card">
+                        <div class="films__card-image">
+                            <img src="./src/img/films/marsjanin.jpg" alt="">
+                        </div>
+                        <div class="films__card-info">
+                            <h3 class="films__card-title">Marsjanin</h3>
+                            <p class="films__card-description">
+                                Po nieudanej ekspedycji Mark zostaje sam na Marsie. Mimo znikomych zapasów oraz zerwanej łączności z dowództwem mężczyzna stara się przetrwać w trudnych warunkach.
+                            </p>
+                            <div class="films__card-film-information">
+                                <p><span>Gatunek:</span> Sci-Fi</p>
+                                <p>
+                                    <span>Produkcja:</span> USA / Wielka Brytania
+                                </p>
+                                <p><span>Premiera:</span> 11 września 2015</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="films__card">
+                        <div class="films__card-image">
+                            <img src="./src/img/films/interstellar.jpg" alt="">
+                        </div>
+                        <div class="films__card-info">
+                            <h3 class="films__card-title">Interstellar</h3>
+                            <p class="films__card-description">
+                                Byt ludzkości na Ziemi dobiega końca wskutek zmian klimatycznych. Grupa naukowców odkrywa tunel czasoprzestrzenny, który umożliwia poszukiwanie nowego domu.
+                            </p>
+
+                            <div class="films__card-film-information">
+                                <p><span>Gatunek:</span> Sci-Fi</p>
+                                <p>
+                                    <span>Produkcja:</span> USA / Wielka Brytania
+                                </p>
+                                <p><span>Premiera:</span> 26 październik 2014</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="films__card">
+                        <div class="films__card-image">
+                            <img src="./src/img/films/pierwszy_czlowiek.jpg" alt="">
+                        </div>
+                        <div class="films__card-info">
+                            <h3 class="films__card-title">Pierwszy człowiek</h3>
+                            <p class="films__card-description">
+                                Fragment życia astronauty Neila Armstronga i jego legendarnej misji kosmicznej, dzięki której jako pierwszy człowiek stanął na Księżycu.
+                            </p>
+                            <div class="films__card-film-information">
+                                <p><span>Gatunek:</span> Biograficzny / Dramat</p>
+                                <p>
+                                    <span>Produkcja:</span> USA / Japonia
+                                </p>
+                                <p><span>Premiera:</span> 11 września 2015</p>
+                            </div>                           
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="link-button">
+                    <a href="#">Zobacz więcej filmów</a>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- SECTION IMAGES -->
+        <section class="images">
+            <div class="wrapper">
+                <h2 class="section-title">Obrazy</h2>
+                <div class="images__box section">
+
+                    <div class="images__content">
+                        <div class="images__image images__image--one"></div>
+                        <div class="images__image images__image--two"></div>
+                        <div class="images__image images__image--three"></div>
+                        <div class="images__image images__image--four"></div>
+                        <div class="images__image images__image--five"></div>
+                        <div class="images__image images__image--six"></div>
+                    </div>
+
+                </div>
+
+                <button class="link-button">
+                    <a href="#">Zobacz więcej obrazów</a>
                 </button>
             </div>
         </section>
     </main>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            planetsite || 
+            <span  class="footer__year">2022</span>
+        </p>
+    </footer>
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

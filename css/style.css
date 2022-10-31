@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,7 +8,11 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -18,13 +22,56 @@ html {
 }
 
 .section-title {
+  margin-top: 2em;
   margin-bottom: 0.5em;
   text-align: center;
   font-size: 4.3rem;
+  font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    margin-top: 3em;
+    font-size: 5rem;
+  }
 }
 
 .section {
   margin: 5em 0;
+}
+
+.link-button {
+  display: block;
+  margin: 5em auto 0 auto;
+  width: 80%;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+  background: none;
+  cursor: pointer;
+}
+
+.link-button a {
+  display: block;
+  padding: 1em 0;
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.link-button:hover {
+  background-color: black;
+}
+
+.link-button:hover a {
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .link-button {
+    width: 50%;
+  }
 }
 
 .nav {
@@ -140,7 +187,7 @@ html {
   .nav__menu {
     display: block;
     position: relative;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     height: 100%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -202,6 +249,7 @@ html {
 .header__card-title {
   margin-bottom: 0.2em;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .header__arrow-btn {
@@ -211,9 +259,10 @@ html {
   height: 5rem;
   border-radius: 50%;
   background: none;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   color: #fff;
   font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .header__arrow-btn.active {
@@ -282,6 +331,7 @@ html {
   margin-bottom: 0.3em;
   text-align: center;
   font-size: 3rem;
+  font-weight: 300;
 }
 
 .main .info__list {
@@ -294,6 +344,7 @@ html {
 
 .main .info__list li {
   margin: 0.5em 0;
+  font-weight: 300;
 }
 
 @media (min-width: 1200px) {
@@ -345,6 +396,7 @@ html {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  font-weight: 300;
 }
 
 .main .planets .slick-arrow {
@@ -367,20 +419,188 @@ html {
   right: 0;
 }
 
-.main .planets__link {
-  display: block;
-  margin: 5em auto 0 auto;
-  width: 80%;
-  cursor: pointer;
+.main .films__card {
+  margin: 4em 0;
+  padding: 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main .planets__link a {
-  display: block;
+.main .films__card:first-child {
+  margin-top: 0;
+}
+
+.main .films__card-image {
+  height: 20rem;
+}
+
+.main .films__card-image img {
+  height: 100%;
+}
+
+.main .films__card-film-information p {
+  text-align-last: left;
+  font-size: 1.5rem;
+}
+
+.main .films__card-film-information span {
+  color: #747171;
+}
+
+.main .films__card-description {
   padding: 1em 0;
-  width: 100%;
-  text-decoration: none;
-  text-transform: uppercase;
+  text-align: center;
   font-size: 1.6rem;
-  color: #000;
+}
+
+.main .films__card-title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.main .films__button {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 678px) {
+  .main .films__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .films__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .main .films__card-info {
+    padding: 0 3em;
+  }
+  .main .films__card-title {
+    text-align: left;
+  }
+  .main .films__card-description {
+    margin: 0.7em 0;
+    text-align: left;
+  }
+  .main .films__card-description {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .main .films__card {
+    width: 70%;
+  }
+}
+
+.main .images__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .images__image {
+  margin: 0.3em 0;
+  width: 90%;
+  height: 25rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  border: 1rem solid #c2bdbd;
+  background-color: black;
+}
+
+.main .images__image--one {
+  background-image: url("/src/img/gallery/image_1.jpg");
+}
+
+.main .images__image--two {
+  background-image: url("/src/img/gallery/image_2.jpg");
+}
+
+.main .images__image--three {
+  background-image: url("/src/img/gallery/image_3.jpg");
+}
+
+.main .images__image--four {
+  background-image: url("/src/img/gallery/image_4.jpg");
+}
+
+.main .images__image--five {
+  background-image: url("/src/img/gallery/image_5.jpg");
+}
+
+.main .images__image--six {
+  background-image: url("/src/img/gallery/image_6.jpg");
+}
+
+@media (min-width: 678px) {
+  .main .images__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .main .images__image {
+    margin: 0.3em;
+    width: 30%;
+    height: 20rem;
+  }
+}
+
+.footer {
+  margin-top: 5em;
+  padding: 0.5em 0;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #beb9b9;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    font-size: 2.4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
