@@ -1,0 +1,89 @@
+// HEADER
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    background-image: url('../src/img/header-planets-small.jpg');
+}
+
+@media(min-width: 678px) {
+    .header {
+        background-image: url('../src/img/header-planets-big.jpg');
+    }
+}
+
+// MAIN-CONTENT
+.content {
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        margin-top: 4em;
+        padding: 0 1em;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    &__card {
+        margin: 5em 0;
+        width: 90%;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__card-planet {
+        height: 25rem;
+    }
+
+    &__card-title {
+        text-align: center;
+        margin-bottom: 0.8em;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    &__card-description {
+        margin-top: 1em;
+        padding: 0 2em;
+        font-size: 1.8rem;
+
+        li {
+            margin: 1em 0;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .content {
+        &__card {
+            display: flex;
+            justify-content: space-between;
+            margin: 10em 0;
+            width: 90%;
+        }    
+    
+        &__card-planet {
+            margin-top: 5em;
+            width: 25rem;
+        }
+
+        &__card-description {
+            width: 50%;
+        }
+    }
+}

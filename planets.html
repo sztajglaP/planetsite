@@ -4,18 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: 3rem;
-        }
-    </style>
+    <title>Planetsite</title>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e3880d6ff2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/planets.css">
 </head>
 <body>
-    <p>Strona w trakcie budowanie...</p>
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="wrapper">
+            <div class="nav__box">
+
+                <div class="nav__logo">
+                    <i class="fa-sharp fa-solid fa-earth-americas"></i>
+                    planetsite
+                </div>
+
+                <div class="nav__menu">
+                    <ul>
+                        <li class="nav__menu-item">
+                            <a href="index.html">Strona główna</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="planets.html">Planety</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="films.html">Filmy</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="images.html">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="nav__burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__card">
+            <h1 class="header__card-title">Planety</h1>
+        </div>
+        <button class="header__arrow-btn">
+            <i class="fa-solid fa-arrow-down"></i>
+        </button>
+    </header>
+
+    <!-- MAIN -->
+    <main class="content">
+        <div class="wrapper">
+            <h2 class="section-title">Planety</h2>
+            <div class="content__box">
+
+                <p class="content__text">
+                    <strong>Planety</strong> dzielone są na dwie kategorie: duże gazowe olbrzymy o małej gęstości oraz mniejsze planety skaliste. Według definicji IAU, w Układzie Słonecznym znanych jest 8 planet: cztery wewnętrzne – Merkury, Wenus, Ziemia, Mars i cztery zewnętrzne – Jowisz, Saturn, Uran i Neptun. Z wyjątkiem Merkurego i Wenus, wokół każdej z nich krąży jeden lub więcej księżyców. Do 26 grudnia 2017 roku Encyklopedia pozasłonecznych układów planetarnych stwierdzała istnienie 3727 planet pozasłonecznych.
+                </p>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Merkury</p>
+                        <ul>
+                            <li>Rok na Merkurym to zaledwie 88 dni.</li>
+                            <li>Merkury jest najmniejszą planetą w Układzie Słonecznym.</li>
+                            <li>Merkury jest drugą najgęstszą planetą</li>
+                            <li>Merkury ma nierówną powierzchnię</li>
+                            <li>Merkury ma płynne jądro</li>
+                            <li>Merkury jest dopiero drugą z najgorętszych planet</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Wenus</p>
+                        <ul>
+                            <li>Wenus jest drugą planetą Układu Słonecznego.</li>
+                            <li>Choć Wenus nie posiada księżyca, w przeszłości uważano inaczej.</li>
+                            <li>Dzień na Wenus trwa 118 ziemskich dni i 16 godzin.</li>
+                            <li>Rok na wenus trwa około 225 dni.</li>
+                            <li>Temperatura na powierzchni Wenus może dochodzić do 482°C.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Ziemia</p>
+                        <ul>
+                            <li>70,8% Ziemii to woda, reszta to wyspy i kontynety.</li>
+                            <li>Najwyższczy punkt na Ziemie to Mounth Everest – jego wysokośc to 8 848 km.</li>
+                            <li>Najniższy punkt na Ziemi to Challenger Deep znajdujący się w Rowie Mariańskim.</li>
+                            <li>Wokół Ziemi krąży naturalny satelita – Księżyc</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Mars</p>
+                        <ul>
+                            <li>Najwyższy szczyt na Marsie to wulkan o nazwie Góra Olimp. Ma 25 km wysokości i jest to prawdopodobnie również najwyższe wzniesienie w całym Układzie Słonecznym.</li>
+                            <li>Atmosfera na Marsie, w porównaniu z atmosferą ziemską, jest bardzo rzadka (to mniej niż 1% naszego powietrza) i składa się w 95% z dwutlenku węgla.</li>
+                            <li>Temperatura na Marsie waha się od +55 stopni Celsjusza w lecie do nawet -130 stopni zimą. Zachodzące Słońce ma tutaj kolor niebieski.</li>
+                            <li>Mars był kiedyś bardzo podobny do Ziemi. Można tam znaleźć tereny górzyste, równiny, doliny, a także kaniony. Te ostatnie osiągają długość nawet do 5000 km.</li>
+                            <li>Doba na Marsie nazywa się „sol” i wynosi 24 godzin i 37 minut. Z kolei rok na Czerwonej Planecie to 687 dni ziemskich.</li>
+                            <li>W zależności od pozycji Marsa i Ziemi względem siebie, sygnał radiowy potrzebuje od 4 do 22 minut, by dotrzeć z jednej planety na drugą.</li>
+                            <li>Łazik Opportunity, który na Marsie miał działać przez 90 dni był aktywny przez prawie 15 lat. W tym czasie przejechał łącznie ponad 45 km ustanawiając rekord długości jazdy na terenie pozaziemskim.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Jowisz</p>
+                        <ul>
+                            <li>Średnica Jowisza to 139 822 km.</li>
+                            <li>W 1610 Galileo Galilei odkrył 4 pierwsze księżyce Jowisza.</li>
+                            <li>Pierwsze obserwacje Jowisza prowadzili starożytni Babilończycy już w VIII wieku p.n.e.</li>
+                            <li>Dzień na Jowiszu jest najkrótszy ze wszystkich planet Układu Słonecznego.</li>
+                            <li>Jowisz okrąża Słońce w ciągu 11.86 lat.</li>
+                            <li>Jowisz ma pierścienie.</li>
+                            <li>Jowisz nie posiada powierzchni.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Saturn</p>
+                        <ul>
+                            <li>Saturn jest najmniej gęstą planetą w Układzie Słonecznym.</li>
+                            <li>Saturn jest spłaszczoną kulą.</li>
+                            <li>Saturna można zobaczyć gołym okiem na nocnym niebie.</li>
+                            <li>Rok na Saturnie trwa 29.4 ziemskich lat.</li>
+                            <li>Dzień na Saturnie trwa 10 godzin 33 minuty i 38 sekund.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Uran</p>
+                        <ul>
+                            <li>Uran to siódma, przedostatnia planeta Układu Słonecznego. Dalej od Słońca znajduje się tylko Neptun.</li>
+                            <li>Na pierwszy rzut oka Uran przypomina nieco Neptuna.</li>
+                            <li>Uran to pierwsza planeta, która została zaobserwowana za pomocą teleskopu.</li>
+                            <li>Uran bywa widoczny z Ziemi.</li>
+                            <li>Wokół tej planety krąży aż 27 księżyców.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-planet">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content__card-description">
+                        <p class="content__card-title">Neptun</p>
+                        <ul>
+                            <li>Pierwszym obserwatorem Neptuna był Galileusz (28 grudzień 1612 roku).</li>
+                            <li>Na początku planetę ta nazywano Janus oraz Oceanus.</li>
+                            <li>Neptun ma 17 razy większą masę od Ziemi.</li>
+                            <li>Neptun znajduje się 4,5 miliarda km od Słońca.</li>
+                            <li>Pełny obieg wokół Słońca trwa 164,8 lat.</li>
+                            <li>Neptun jest 30 razy dalej od Słońca niż Ziemia.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            planetsite || 
+            <span  class="footer__year">2022</span>
+        </p>
+    </footer>
+
+    <script src="./dist/ts/script.js"></script>
+    <script type="module" src="./dist/ts/plantes-three.js"></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background-image: url("../src/img/header-planets-small.jpg");
+}
+
+@media (min-width: 678px) {
+  .header {
+    background-image: url("../src/img/header-planets-big.jpg");
+  }
+}
+
+.content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__text {
+  margin-top: 4em;
+  padding: 0 1em;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.content__card {
+  margin: 5em 0;
+  width: 90%;
+}
+
+.content__card:first-child {
+  margin-top: 0;
+}
+
+.content__card:last-child {
+  margin-bottom: 0;
+}
+
+.content__card-planet {
+  height: 25rem;
+}
+
+.content__card-title {
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.content__card-description {
+  margin-top: 1em;
+  padding: 0 2em;
+  font-size: 1.8rem;
+}
+
+.content__card-description li {
+  margin: 1em 0;
+}
+
+.content__card-description li:first-child {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .content__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 10em 0;
+    width: 90%;
+  }
+  .content__card-planet {
+    margin-top: 5em;
+    width: 25rem;
+  }
+  .content__card-description {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=planets.css.map */
