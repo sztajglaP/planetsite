@@ -1,7 +1,7 @@
 import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
 
 const allCanvas = document.querySelectorAll('canvas');
-const cardPlanet = document.querySelector('.content__card-planet');
+const cardPlanet = document.querySelector('.planet-box');
 
 const planetsImage = ['merkury', 'wenus', 'ziemia', 'mars', 'jowisz', 'saturn', 'uran', 'neptun'];
 

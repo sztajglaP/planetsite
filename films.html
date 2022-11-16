@@ -5,17 +5,282 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: 3rem;
-        }
-    </style>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e3880d6ff2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/films.css">
 </head>
 <body>
-    <p>Strona w trakcie budowanie...</p>
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="wrapper">
+            <div class="nav__box">
+
+                <a href="index.html" class="nav__logo">
+                    <i class="fa-sharp fa-solid fa-earth-americas"></i>
+                    planetsite
+                </a>
+
+                <div class="nav__menu">
+                    <ul>
+                        <li class="nav__menu-item">
+                            <a href="index.html">Strona główna</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="planets.html">Planety</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="films.html">Filmy</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="images.html">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="nav__burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__card">
+            <h1 class="header__card-title">Filmy</h1>
+        </div>
+        <button class="header__arrow-btn">
+            <i class="fa-solid fa-arrow-down"></i>
+        </button>
+    </header>
+
+    <!-- MAIN -->
+    <main class="content">
+        <div class="wrapper">
+            <h2 class="section-title">Filmy</h2>
+            <div class="content__box">
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/marsjanin.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Marsjanin</h3>
+                        <p class="content__card-text">
+                            Po nieudanej ekspedycji Mark zostaje sam na Marsie. Mimo znikomych zapasów oraz zerwanej łączności z dowództwem mężczyzna stara się przetrwać w trudnych warunkach.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p><span>Gatunek:</span> Sci-Fi</p>
+                            <p>
+                                <span>Produkcja:</span> USA / Wielka Brytania
+                            </p>
+                            <p><span>Premiera:</span> 11 września 2015</p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Marsjanin+Zwiastun+nr+2+polski-37020">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/interstellar.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Interstellar</h3>
+                        <p class="content__card-text">
+                            Byt ludzkości na Ziemi dobiega końca wskutek zmian klimatycznych. Grupa naukowców odkrywa tunel czasoprzestrzenny, który umożliwia poszukiwanie nowego domu.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p><span>Gatunek:</span> Biograficzny / Dramat</p>
+                            <p>
+                                <span>Produkcja:</span> USA / Japonia
+                            </p>
+                            <p><span>Premiera:</span> 11 września 2015</p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Interstellar+Zwiastun+nr+1+polski-33564">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/pierwszy_czlowiek.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Pierwszy człowiek</h3>
+                        <p class="content__card-text">
+                            Fragment życia astronauty Neila Armstronga i jego legendarnej misji kosmicznej, dzięki której jako pierwszy człowiek stanął na Księżycu.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p><span>Gatunek:</span> Biograficzny / Dramat</p>
+                            <p>
+                                <span>Produkcja:</span> USA / Japonia
+                            </p>
+                            <p><span>Premiera:</span> 11 września 2015</p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Pierwszy+cz%C5%82owiek+Zwiastun+nr+4-47830">Zobacz zwiastun</a>
+                        </div>        
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/ad_astra.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Ad Astra</h3>
+                        <p class="content__card-text">
+                            Astronauta podróżuje przez Układ Słoneczny w celu odnalezienia zaginionego dwadzieścia lat wcześniej ojca.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p><span>Gatunek:</span> Thriller / Sci-Fi</p>
+                            <p>
+                                <span>Produkcja:</span> USA / Brazylia / Chiny
+                            </p>
+                            <p>
+                                <span>Premiera:</span> 
+                                29 sierpnia 2019
+                            </p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Ad+Astra+Zwiastun+nr+1+polski-50323">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/moonfall.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Moonfall</h3>
+                        <p class="content__card-text">
+                            Tajemnicza siła wybija Księżyc z orbity i posyła go na kurs kolizyjny z Ziemią. Grupa astronautów wyrusza w kosmos, by zapobiec katastrofie.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p>
+                                <span>Gatunek:</span> Sci-Fi / Katastroficzny
+                            </p>
+                            <p>
+                                <span>Produkcja:</span> USA / Kanada / Chiny
+                            </p>
+                            <p><span>Premiera:</span> 
+                                2 lutego 2022
+                            </p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Moonfall+Zwiastun+nr+2+polski-60075">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/nowa_ziemia.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Nowa Ziemia</h3>
+                        <p class="content__card-text">
+                            Blake powraca na Ziemię w ramach misji, która ma sprawdzić czy planeta jest ponownie zdatna do życia. Po katastrofie lądownika musi walczyć o przetrwanie, a od tej walki będą zależeć dalsze losy ludzkości.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p>
+                                <span>Gatunek:</span> Sci-Fi
+                            </p>
+                            <p>
+                                <span>Produkcja:</span> Niemcy / Szwajcaria
+                            </p>
+                            <p><span>Premiera:</span> 6 stycznia 2021</p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Nowa+Ziemia+Zwiastun+nr+2-58165">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/czerwona_planeta.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Czerwona planeta</h3>
+                        <p class="content__card-text">
+                            Rok 2050, grupa astronautów zostaje wysłana na Marsa, by rozpocząć kolonizację planety. Podczas wyprawy statek ulega awarii, a bohaterowie zmuszeni są walczyć o przetrwanie.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p>
+                                <span>Gatunek:</span> Thriller / Akcja / Sci-Fi
+                            </p>
+                            <p>
+                                <span>Produkcja:</span> USA / Australia
+                            </p>
+                            <p>
+                                <span>Premiera:</span> 
+                                6 listopada 2000
+                            </p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Czerwona+planeta+Zwiastun+nr+1-12901">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/grawitacja.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">Grawitacja</h3>
+                        <p class="content__card-text">
+                            Weteran misji kosmicznych i ambitna pani naukowiec krążą po orbicie Ziemi na uszkodzonym promie.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p>
+                                <span>Gatunek:</span> Dramat / Sci-Fi
+                            </p>
+                            <p>
+                                <span>Produkcja:</span> USA / Wielka Brytania
+                            </p>
+                            <p>
+                                <span>Premiera:</span> 28 sierpnia 2013 
+                            </p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/Grawitacja+Zwiastun+nr+1+polski-30714">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <div class="content__card-img">
+                        <img src="./src/img/films/w_nieznane.jpg" alt="">
+                    </div>
+                    <div class="content__card-description">
+                        <h3 class="content__card-title">W nieznane</h3>
+                        <p class="content__card-text">
+                            Amerykański astronauta przygotowuje się do misji skolonizowania Marsa.
+                        </p>
+                        <div class="content__card-film-information">
+                            <p>
+                                <span>Gatunek:</span> Dramat / Sci-Fi
+                            </p>
+                            <p>
+                                <span>Produkcja:</span> 
+                                USA
+                            </p>
+                            <p>
+                                <span>Premiera:</span> 
+                                3 czerwca 2016
+                            </p>
+                            <a class="content__card-link" target="_blank" href="https://www.filmweb.pl/video/Zwiastun/W+nieznane+Zwiastun+nr+1-39124">Zobacz zwiastun</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            planetsite || 
+            <span  class="footer__year">2022</span>
+        </p>
+    </footer>
+
+    <script src="./dist/ts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,128 @@
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background-image: url("../src/img/header-films-small.jpg");
+}
+
+@media (min-width: 678px) {
+  .header {
+    background-image: url("../src/img/header-films-big.jpg");
+  }
+}
+
+.content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7em;
+}
+
+.content__card:first-child {
+  margin: 0;
+}
+
+.content__card-img {
+  width: 70%;
+}
+
+.content__card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.content__card-description {
+  text-align: center;
+}
+
+.content__card-title {
+  margin-top: 0.7em;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.content__card-text {
+  margin: 0.7em 0;
+  padding: 0 0.7em;
+  font-size: 1.8rem;
+}
+
+.content__card-film-information {
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.6rem;
+  text-align-last: left;
+}
+
+.content__card-film-information span {
+  color: #747171;
+}
+
+.content__card-link {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 678px) {
+  .content__card {
+    padding: 0 1em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content__card-img {
+    width: 20%;
+  }
+  .content__card-description {
+    width: 80%;
+    margin-left: 5em;
+    text-align-last: left;
+  }
+  .content__card-title {
+    margin-top: 0;
+  }
+  .content__card-text {
+    text-align: left;
+    padding: 0;
+  }
+  .content__card-film-information {
+    margin: 0;
+  }
+  .content__card-link {
+    display: block;
+    margin-top: 0.3em;
+  }
+}
+/*# sourceMappingURL=films.css.map */
