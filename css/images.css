@@ -1,0 +1,130 @@
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background-image: url("../src/img/header-images-small.jpg");
+}
+
+@media (min-width: 678px) {
+  .header {
+    background-image: url("../src/img/header-images-big.jpg");
+  }
+}
+
+.content__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__img-box {
+  position: relative;
+  margin-top: 5em;
+  width: 80%;
+  height: 25rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.content__img-box:first-child {
+  margin: 0;
+}
+
+.content__popup {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 10;
+}
+
+.content__popup.active {
+  display: block;
+}
+
+.content__popup-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  height: 25rem;
+  border-radius: 3rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.content__popup-button {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  padding: 0.2em;
+  font-size: 3rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.content__popup-button--right {
+  right: 0;
+}
+
+@media (min-width: 678px) {
+  .content__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content__img-box {
+    width: 40%;
+    height: 35rem;
+    margin: 1em;
+  }
+  .content__img-box:first-child {
+    margin: 1em;
+  }
+  .content__popup-image {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .content__img-box {
+    width: 30%;
+    height: 40rem;
+    margin: 1em;
+  }
+  .content__popup-image {
+    width: 60%;
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content__popup-image {
+    width: 50%;
+    height: 40rem;
+  }
+}
+/*# sourceMappingURL=images.css.map */

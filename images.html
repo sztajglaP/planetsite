@@ -5,17 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: 3rem;
-        }
-    </style>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e3880d6ff2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/images.css">
 </head>
 <body>
-    <p>Strona w trakcie budowanie...</p>
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="wrapper">
+            <div class="nav__box">
+
+                <a href="index.html" class="nav__logo">
+                    <i class="fa-sharp fa-solid fa-earth-americas"></i>
+                    planetsite
+                </a>
+
+                <div class="nav__menu">
+                    <ul>
+                        <li class="nav__menu-item">
+                            <a href="index.html">Strona główna</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="planets.html">Planety</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="films.html">Filmy</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="images.html">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="nav__burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="content__popup">
+        <div class="wrapper">
+            <div class="content__popup-image">
+                <button class="content__popup-button content__popup-button--left"><</button>
+                <button class="content__popup-button content__popup-button--right">></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__card">
+            <h1 class="header__card-title">Galeria</h1>
+        </div>
+        <button class="header__arrow-btn">
+            <i class="fa-solid fa-arrow-down"></i>
+        </button>
+    </header>
+
+    <!-- MAIN -->
+    <main class="content">
+        <div class="wrapper">
+            <h2 class="section-title">Planety</h2>
+            <div class="content__box">
+
+                
+
+            </div>
+        </div>
+    </main>
+
+    
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            planetsite || 
+            <span  class="footer__year">2022</span>
+        </p>
+    </footer>
+
+    <script src="./dist/ts/script.js"></script>
+    <script src="./dist/ts/images.js"></script>
 </body>
 </html>
