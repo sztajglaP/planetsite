@@ -255,6 +255,10 @@ body.active {
   font-weight: 300;
 }
 
+.header__card-text {
+  font-weight: 300;
+}
+
 .header__arrow-btn {
   position: absolute;
   bottom: 3rem;
