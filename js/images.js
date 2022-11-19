@@ -10,7 +10,7 @@ const createImages = (image, index) => {
     const div = document.createElement('div');
     div.classList.add('content__img-box');
     div.id = index;
-    div.style.backgroundImage = `url(../src/img/gallery/${image}.jpg)`;
+    div.style.backgroundImage = `url(../img/gallery/${image}.jpg)`;
     contentBox.appendChild(div);
     allImages = document.querySelectorAll('.content__img-box');
 };
@@ -26,7 +26,7 @@ const clickImage = (e) => {
     popup.classList.add('active');
     image.id = index;
     id = index;
-    image.style.backgroundImage = `url(../src/img/gallery/${images[index]}.jpg)`;
+    image.style.backgroundImage = `url(../img/gallery/${images[index]}.jpg)`;
     document.body.style.overflow = 'hidden';
 }
 
@@ -45,14 +45,14 @@ popup.addEventListener('click', (e) => {
             return;
         } else {
             id--;
-            image.style.backgroundImage = `url(../src/img/gallery/${images[id]}.jpg)`;
+            image.style.backgroundImage = `url(../img/gallery/${images[id]}.jpg)`;
         }
     } else if(e.target.classList.contains('content__popup-button--right')) {
         if(id >= images.length - 1) {
             return;
         } else {
             id++;
-            image.style.backgroundImage = `url(../src/img/gallery/${images[id]}.jpg)`;
+            image.style.backgroundImage = `url(../img/gallery/${images[id]}.jpg)`;
         } 
     }
 });

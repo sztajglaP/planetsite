@@ -212,17 +212,17 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh; 
-    background-image: url('../src/img/header-img-small.jpg');
+    background-image: url('../img/header-img-small.jpg');
     background-position: center;
     background-size: cover;
 
     &__card {
-        padding: 4em 1em;
+        padding: 1em 1em;
         color: #fff;
         font-size: 2rem;
         text-align: center;
         border-radius: 2rem;
-        background-color: rgba($color: #000000, $alpha: 0.6);
+        background-color: rgba($color: #000000, $alpha: 0.7);
     }
 
     &__card-title {
@@ -265,10 +265,9 @@ body {
 
 @media(min-width: 678px) {
     .header {
-        background-image: url('../src/img/header-img-big.jpg');
+        background-image: url('../img/header-img-big.jpg');
 
         &__card {
-            padding: 3em 1em;
             font-size: 3.5rem;
         }
     }
@@ -277,7 +276,6 @@ body {
 @media(min-width: 1200px) {
     .header {
         &__card {
-            padding: 3em 4em;
             font-size: 5rem;
         }
     }
@@ -354,17 +352,12 @@ body {
             justify-content: space-between;
             margin: 0 2em;
             padding: 0 2em;
+            // background-color: black;
         }
 
-        .card-image {
+        &__card-image {
             margin: 0 auto;
             width: 100%;
-            // height: 100%;
-            // background-color: grey;
-
-            // img {
-            //     width: 100%;
-            // }
         }
 
         &__card-info {
@@ -504,31 +497,30 @@ body {
             height: 25rem;
             background-position: center;
             background-size: cover;
-            border-radius: 1rem;
-            border: 1rem solid rgb(194, 189, 189);
+            border-radius: 3rem;
 
             &--one {
-                background-image: url('/src/img/gallery/image_1.jpg');
+                background-image: url('../img/gallery/image_1.jpg');
             }
 
             &--two {
-                background-image: url('/src/img/gallery/image_2.jpg');
+                background-image: url('../img/gallery/image_2.jpg');
             }
 
             &--three {
-                background-image: url('/src/img/gallery/image_3.jpg');
+                background-image: url('../img/gallery/image_3.jpg');
             }
 
             &--four {
-                background-image: url('/src/img/gallery/image_4.jpg');
+                background-image: url('../img/gallery/image_4.jpg');
             }
 
             &--five {
-                background-image: url('/src/img/gallery/image_5.jpg');
+                background-image: url('../img/gallery/image_5.jpg');
             }
 
             &--six {
-                background-image: url('/src/img/gallery/image_6.jpg');
+                background-image: url('../img/gallery/image_6.jpg');
             }
         }
     }

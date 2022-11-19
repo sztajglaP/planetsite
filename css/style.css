@@ -235,18 +235,18 @@ body.active {
           align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../src/img/header-img-small.jpg");
+  background-image: url("../img/header-img-small.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .header__card {
-  padding: 4em 1em;
+  padding: 1em 1em;
   color: #fff;
   font-size: 2rem;
   text-align: center;
   border-radius: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header__card-title {
@@ -300,17 +300,15 @@ body.active {
 
 @media (min-width: 678px) {
   .header {
-    background-image: url("../src/img/header-img-big.jpg");
+    background-image: url("../img/header-img-big.jpg");
   }
   .header__card {
-    padding: 3em 1em;
     font-size: 3.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .header__card {
-    padding: 3em 4em;
     font-size: 5rem;
   }
 }
@@ -384,7 +382,7 @@ body.active {
   padding: 0 2em;
 }
 
-.main .planets .card-image {
+.main .planets__card-image {
   margin: 0 auto;
   width: 100%;
 }
@@ -542,32 +540,31 @@ body.active {
   height: 25rem;
   background-position: center;
   background-size: cover;
-  border-radius: 1rem;
-  border: 1rem solid #c2bdbd;
+  border-radius: 3rem;
 }
 
 .main .images__image--one {
-  background-image: url("/src/img/gallery/image_1.jpg");
+  background-image: url("../img/gallery/image_1.jpg");
 }
 
 .main .images__image--two {
-  background-image: url("/src/img/gallery/image_2.jpg");
+  background-image: url("../img/gallery/image_2.jpg");
 }
 
 .main .images__image--three {
-  background-image: url("/src/img/gallery/image_3.jpg");
+  background-image: url("../img/gallery/image_3.jpg");
 }
 
 .main .images__image--four {
-  background-image: url("/src/img/gallery/image_4.jpg");
+  background-image: url("../img/gallery/image_4.jpg");
 }
 
 .main .images__image--five {
-  background-image: url("/src/img/gallery/image_5.jpg");
+  background-image: url("../img/gallery/image_5.jpg");
 }
 
 .main .images__image--six {
-  background-image: url("/src/img/gallery/image_6.jpg");
+  background-image: url("../img/gallery/image_6.jpg");
 }
 
 @media (min-width: 678px) {

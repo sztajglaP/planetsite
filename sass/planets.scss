@@ -4,12 +4,12 @@ html {
 
 // HEADER
 .header {
-    background-image: url('../src/img/header-planets-small.jpg');
+    background-image: url('../img/header-planets-small.jpg');
 }
 
 @media(min-width: 678px) {
     .header {
-        background-image: url('../src/img/header-planets-big.jpg');
+        background-image: url('../img/header-planets-big.jpg');
     }
 }
 

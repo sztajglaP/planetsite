@@ -4,12 +4,12 @@ html {
 
 // HEADER
 .header {
-    background-image: url('../src/img/header-images-small.jpg');
+    background-image: url('../img/header-images-small.jpg');
 }
 
 @media(min-width: 678px) {
     .header {
-        background-image: url('../src/img/header-images-big.jpg');
+        background-image: url('../img/header-images-big.jpg');
     }
 }
 
@@ -68,12 +68,21 @@ html {
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
-        padding: 0.2em;
-        font-size: 3rem;
+        padding: 0.6em;
+        font-size: 3.4rem;
         border: 1px solid transparent;
+        background-color: rgba($color: #000000, $alpha: 0.95);
+        color: white;
         cursor: pointer;
 
+        &--left {
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        }
+
         &--right {
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
             right: 0;
         }
     }
