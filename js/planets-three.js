@@ -27,7 +27,7 @@ window.onload = () => {
 
     scene.forEach((scene, index) => {
         const planet = new THREE.Mesh(new THREE.SphereGeometry(6, 50, 50), new THREE.MeshBasicMaterial({
-            map: new THREE.TextureLoader().load(`../img/planets-uv-map/${planetsImage[index]}.jpg`)
+            map: new THREE.TextureLoader().load(`./img/planets-uv-map/${planetsImage[index]}.jpg`)
         }));
 
         scene.background = new THREE.Color(0xffffff);
